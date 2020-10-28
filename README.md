@@ -7,3 +7,9 @@ go基础笔记
 export GOFLAGS=""
 go build
 ```
+
+# rm -rf 删除GOPATH下目录报Permission denied
+```
+https://github.com/golang/go/issues/27161
+go clean -modcache
+```
