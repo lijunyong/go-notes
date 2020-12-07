@@ -51,3 +51,13 @@ func go2(ctx context.Context)  {
 	}
 }
 ```
+
+# go get指定版本不会安装
+
+```
+go get 没用，因为 main 包不在项目根目录。如果需要手动安装，可以按照以下方式：
+
+git clone https://github.com/caixw/gobuild.git
+cd gobuild/cmd/gobuild
+go install
+```
